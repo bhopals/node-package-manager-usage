@@ -34,3 +34,18 @@ details you can keep the default one except the "name" as this would be the name
     npm install babel-cli babel-preset-stage-0 babel-preset-es2015 --save-dev
     The spec in the preset’s name is not the target version, but the source version. For example, babel-preset-es2015 would compile ES6(es2015) to ES5 and babel-preset-es2016 would compile ES7(es2016) to ES6(es2015)
 
+
+
+To **install** specefic version of NPM, run "npm install <name>@version".
+Example : npm install -g eslint@5.2.0
+
+To check **outdated** dependencies, run "npm outdated".
+Example : npm outdated -g. This would returns the list of the npm modules which are outdated along with the
+current installed and latest available version details.
+
+    Package             Current  Wanted  Latest  Location
+    @angular/cli          7.0.5   7.3.5   7.3.5
+    eslint                5.2.0  5.15.1  5.15.1
+
+
+To **fix** outdated node modules error, either you can do "npm update <module_name>" OR "npm install <module_name> -g". The later one is more preferable.
