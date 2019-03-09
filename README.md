@@ -137,6 +137,14 @@ Kindly Refer for more details  - https://docs.npmjs.com/misc/scripts
 
 **NPX v/s NPM**
 
+    -   Using locally-installed tools without npm run-script
+    -   Executing one-off commands
+    -   Run commands with different Node.js versions
+    -   Developing npm run-scripts interactively
+    -   Share gist-based scripts with friends and loved ones!
+
+**NPX** - An npm package runner — helps to execute packages without installing explicitly.
+
 With npx you dont need to install any tool / package permanently if you don't use it so often.
 Here we have to install angular-cli even we just need it once to generate project skeleton.
 
@@ -160,6 +168,7 @@ https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
 
 Also, for comparison:
 https://stackoverflow.com/questions/50605219/difference-between-npx-and-npm
+
 
 
 
