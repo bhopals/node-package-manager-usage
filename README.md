@@ -87,3 +87,27 @@ To install specific dependencies, simple mention the exact dependeny version wit
 package-lock.json: records the exact version of each installed package which allows you to re-install them. Future installs will be able to build an identical dependency tree.
 
 package.json: records the minimum version you app needs. If you update the versions of a particular package, the change is not going to be reflected here.
+
+
+**NPM CACHE**
+To clear npm cache, we need to execute following commands:
+
+```
+//show the cached versions
+npm cache verify
+
+//clear caching
+npm cache clean --force
+
+```
+
+**NPM AUDIT**
+Whenver you install any package, the commpand "npm audit" run automatically and tells you if there
+are any issues with the package. Also check the compatible / installed version required to have that
+dependency required.
+
+```
+npm audit
+```
+
+Once this command is executed, the more detailed report will be displayed.
