@@ -36,10 +36,10 @@ details you can keep the default one except the "name" as this would be the name
 
 
 
-To **install** specefic version of NPM, run "npm install <name>@version".
+To **Install** specefic version of NPM, run "npm install <name>@version".
 Example : npm install -g eslint@5.2.0
 
-To check **outdated** dependencies, run "npm outdated".
+To check **Outdated** dependencies, run "npm outdated".
 Example : npm outdated -g. This would returns the list of the npm modules which are outdated along with the
 current installed and latest available version details.
 
@@ -48,4 +48,23 @@ current installed and latest available version details.
     eslint                5.2.0  5.15.1  5.15.1
 
 
-To **fix** outdated node modules error, either you can do "npm update <module_name>" OR "npm install <module_name> -g". The later one is more preferable.
+To **Fix/Update** outdated node modules error, either you can do "npm update <package_name>" OR "npm install <package_name> -g". The later one is more preferable.
+
+
+To **Remove/uninstall** any deprecated library or module, we can use "npm uninstall <package_name>.
+Example : npm uninstall babel-preset-2015
+
+
+**Semantic Versioning**
+Example : eslint@5.15.1
+    - The first number is for MAJOR Releases
+    - The second number represents MINOR Releases
+    - The last one is for any PATCH Relases
+
+"^" (CARET) - This Means All minor and patches are OKAY, but not major. For example ^4.5.5 means, any minor or patch update can be installed but not any 5.x.x version or above should be installed.
+EXAMPLE : ^4.x.x --> Only version 4 would be installed
+
+"~" (TILDE) - This is more restrictive then the above one. All patches only.
+    For exampple, ~4.5.12, would only install if there is any patch release 12..13..etc, not even minor release. EXAMPLE : ~1.5.X --> Only PATCH releases would be installed.
+
+To install specific dependencies, simple mention the exact dependeny version without any TILDE or CARET sign.
