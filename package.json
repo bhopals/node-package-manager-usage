@@ -1,0 +1,19 @@
+{
+  "name": "npm-usage",
+  "version": "1.0.0",
+  "description": "npm usage details",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhopals/node-package-manager-usage.git"
+  },
+  "author": "Bhopal Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhopals/node-package-manager-usage/issues"
+  },
+  "homepage": "https://github.com/bhopals/node-package-manager-usage#readme"
+}
