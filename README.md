@@ -52,7 +52,7 @@ To **Fix/Update** outdated node modules error, either you can do "npm update <pa
 
 
 To **Remove/uninstall** any deprecated library or module, we can use "npm uninstall <package_name>.
-Example : npm uninstall babel-preset-2015
+Example : npm uninstall babel-preset-es2015
 
 
 **Semantic Versioning**
@@ -68,3 +68,13 @@ EXAMPLE : ^4.x.x --> Only version 4 would be installed
     For exampple, ~4.5.12, would only install if there is any patch release 12..13..etc, not even minor release. EXAMPLE : ~1.5.X --> Only PATCH releases would be installed.
 
 To install specific dependencies, simple mention the exact dependeny version without any TILDE or CARET sign.
+
+
+
+**package-lock.json** - We use package-lock to ensure a consistent install and compatible dependencies. This will ignore "^" sematic rule and will install exact version which is mentioned in package.json file.
+
+Difference between pacakge.json and package-lock.json:
+
+package-lock.json: records the exact version of each installed package which allows you to re-install them. Future installs will be able to build an identical dependency tree.
+
+package.json: records the minimum version you app needs. If you update the versions of a particular package, the change is not going to be reflected here.
