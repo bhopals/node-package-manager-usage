@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bhopals/node-package-manager-usage/issues"
   },
-  "homepage": "https://github.com/bhopals/node-package-manager-usage#readme"
+  "homepage": "https://github.com/bhopals/node-package-manager-usage#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
