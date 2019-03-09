@@ -13,26 +13,35 @@ details you can keep the default one except the "name" as this would be the name
 
 **Adding Node Pacakges**
 
-    - Local : All the npm pacakge installed without "-g" command. These package would be only 
-              available to the project it is installed in.
-
+- Local : All the npm pacakge installed without "-g" command. These package would be only 
+        available to the project it is installed in.
+```
     npm install express
     Locally installed dependencies would be copied in <PROJECT_DIR>\node_modules\
+```
 
-    - Globally : Any package that is installed GLOBALLY, it can be used in any PROJECT. To do that, the package should be installed with "-g" command.
+- Globally : Any package that is installed GLOBALLY, it can be used in any PROJECT. To do that, the package should be installed with "-g" command.
 
+```
     npm install -g express
     Globally installed dependencies would be copied in %AppData%\npm\npm-modules 
+```
 
-     - Dev Dependency : Dependencies that are going to aid in development only. These dependencies will not
-     be shipped to the production. Example : babel dependency for ES06 polyfill. 
+- Dev Dependency : Dependencies that are going to aid in development only. These dependencies will not
+be shipped to the production. Example : babel dependency for ES06 polyfill. 
 
-    The dependency should be installed with "--save-dev". This flag would tell the npm to install mentioned dependencies as a dev-tools, they will not be included in your Production Build, but will be used throughout the Development.
+The dependency should be installed with "--save-dev". This flag would tell the npm to install mentioned dependencies as a dev-tools, 
+they will not be included in your Production Build, but will be used throughout the Development.
 
-     npm install babel-cli --save-dev
+```
+    npm install babel-cli --save-dev
 
     npm install babel-cli babel-preset-stage-0 babel-preset-es2015 --save-dev
-    The spec in the preset’s name is not the target version, but the source version. For example, babel-preset-es2015 would compile ES6(es2015) to ES5 and babel-preset-es2016 would compile ES7(es2016) to ES6(es2015)
+
+```
+The spec in the preset’s name is not the target version, but the source version. 
+For example, babel-preset-es2015 would compile ES6(es2015) to ES5 and 
+babel-preset-es2016 would compile ES7(es2016) to ES6(es2015)
 
 
 
@@ -71,7 +80,7 @@ To install specific dependencies, simple mention the exact dependeny version wit
 
 
 
-**package-lock.json** - We use package-lock to ensure a consistent install and compatible dependencies. This will ignore "^" sematic rule and will install exact version which is mentioned in package.json file.
+**package-lock.json** - We use package-lock to ensure a consistent install and compatible dependencies. This will ignore "^" sematic rule and will install exact version which is mentioned in package.json file. It describes the exact tree that was generated such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
 
 Difference between pacakge.json and package-lock.json:
 
