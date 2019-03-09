@@ -70,10 +70,10 @@ Example : eslint@5.15.1
     - The second number represents MINOR Releases
     - The last one is for any PATCH Relases
 
-"^" (CARET) - This Means All minor and patches are OKAY, but not major. For example ^4.5.5 means, any minor or patch update can be installed but not any 5.x.x version or above should be installed.
+**"^" (CARET)** - This Means All minor and patches are OKAY, but not major. For example ^4.5.5 means, any minor or patch update can be installed but not any 5.x.x version or above should be installed.
 EXAMPLE : ^4.x.x --> Only version 4 would be installed
 
-"~" (TILDE) - This is more restrictive then the above one. All patches only.
+**"~" (TILDE)** - This is more restrictive then the above one. All patches only.
     For exampple, ~4.5.12, would only install if there is any patch release 12..13..etc, not even minor release. EXAMPLE : ~1.5.X --> Only PATCH releases would be installed.
 
 To install specific dependencies, simple mention the exact dependeny version without any TILDE or CARET sign.
@@ -82,7 +82,7 @@ To install specific dependencies, simple mention the exact dependeny version wit
 
 **package-lock.json** - We use package-lock to ensure a consistent install and compatible dependencies. This will ignore "^" sematic rule and will install exact version which is mentioned in package.json file. It describes the exact tree that was generated such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
 
-Difference between pacakge.json and package-lock.json:
+**Difference between pacakge.json and package-lock.json:**
 
 package-lock.json: records the exact version of each installed package which allows you to re-install them. Future installs will be able to build an identical dependency tree.
 
