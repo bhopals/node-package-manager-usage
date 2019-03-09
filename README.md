@@ -107,7 +107,28 @@ are any issues with the package. Also check the compatible / installed version r
 dependency required.
 
 ```
+//Once this command is executed, the more detailed report will be displayed.
 npm audit
+
+//Will be fixed automatically
+npm audit fix
+
 ```
 
-Once this command is executed, the more detailed report will be displayed.
+
+**NPM SCRIPTS** - Scripting in package.json 
+Scripts can be added in *package.json* file's "script" section.
+
+``` 
+"scripts": {
+    "start": "nodemon ./index/js --exec babel-node -e js"
+  }
+
+```
+In the above script, nodemon will run "index.js" but make sure it uses babel-node first to 
+convert the es6 code into readable code for the web.
+So when you run **npm start", it is exactly the same as "nodemon ./index/js --exec babel-node -e js".
+ 
+
+
+Kindly Refer for more details  - https://docs.npmjs.com/misc/scripts

@@ -1,23 +1,18 @@
 {
-  "name": "npm-usage",
+  "name": "test-npm",
   "version": "1.0.0",
-  "description": "npm usage details",
+  "description": "test project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./index.js --exec babel-node -e js",
+    "nodemonthis": "nodemon ./index.js --exec babel-node -e js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bhopals/node-package-manager-usage.git"
-  },
-  "author": "Bhopal Singh",
+  "author": "Emmanuel Henri",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bhopals/node-package-manager-usage/issues"
-  },
-  "homepage": "https://github.com/bhopals/node-package-manager-usage#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4",
+    "socketio": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
