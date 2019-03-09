@@ -128,7 +128,38 @@ Scripts can be added in *package.json* file's "script" section.
 In the above script, nodemon will run "index.js" but make sure it uses babel-node first to 
 convert the es6 code into readable code for the web.
 So when you run **npm start", it is exactly the same as "nodemon ./index/js --exec babel-node -e js".
- 
+
 
 
 Kindly Refer for more details  - https://docs.npmjs.com/misc/scripts
+
+
+
+**NPX v/s NPM**
+
+With npx you dont need to install any tool / package permanently if you don't use it so often.
+Here we have to install angular-cli even we just need it once to generate project skeleton.
+
+```
+npm install angular-cli 
+ng new myApp
+```
+
+
+We could use "NPX" here.
+```
+npx -p @angular/cli ng new myApp
+
+```
+With the above command the angular-cli will be installed temporary and then the project
+skeleton is generated without relying on to have the complete angular-cli package installed in the System.
+
+
+A great article for more detail 
+https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
+
+Also, for comparison:
+https://stackoverflow.com/questions/50605219/difference-between-npx-and-npm
+
+
+
