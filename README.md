@@ -131,6 +131,7 @@ So when you run **npm start", it is exactly the same as "nodemon ./index/js --ex
 
 
 
+
 Kindly Refer for more details  - https://docs.npmjs.com/misc/scripts
 
 
@@ -152,6 +153,8 @@ Here we have to install angular-cli even we just need it once to generate projec
 npm install angular-cli 
 ng new myApp
 ```
+
+
 
 
 We could use "NPX" here.
